@@ -8,8 +8,11 @@ squares = cross rows cols
 
 unitlist = [cross rows [c] | c <- cols] ++
            [cross rows [c] | c <- rows] ++
-           [cross rs cs | rs <- ["ABC", "DEF", "GHI"], cs <- ["123", "456", "789"]]
+           [cross rs cs | rs <- ["ABC", "DEF", "GHI"],
+                          cs <- ["123", "456", "789"]]
 
--- TODO: from units onwards
+units = undefined
+
+peers = undefined
 
 main = putStrLn "Simple Sudoku Solver"
