@@ -11,7 +11,7 @@ squares = cross rows cols
 
 unitlist = [cross rows [c] | c <- cols] ++
            [cross [r] cols | r <- rows] ++
-           [cross rs cs | rs <- ["ABC", "DEF", "GI"]
+           [cross rs cs | rs <- ["ABC", "DEF", "GHI"]
                         , cs <- ["123", "456", "789"]]
 
 unitsOf x = [u | u <- unitlist, x `elem` u]
