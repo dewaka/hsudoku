@@ -19,4 +19,5 @@ unitsOf x = [u | u <- unitlist, x `elem` u]
 peersOf s = foldl addNew [] $ concat $ unitsOf s
   where
     addNew xs x = if x == s || x `elem` xs then xs else x:xs
-              
+
+parseGrid = undefined
