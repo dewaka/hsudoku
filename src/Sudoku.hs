@@ -21,3 +21,5 @@ peersOf s = foldl addNew [] $ concat $ unitsOf s
     addNew xs x = if x == s || x `elem` xs then xs else x:xs
 
 parseGrid = undefined
+
+gridValues = undefined
